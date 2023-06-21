@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="css/ayuda.css">
+<head>
+  <title>Formulario de Comentarios</title>
+  <style>
+    /* Estilos CSS para el formulario */
+  </style>
+</head>
+<body>
+  <center>
+    <div class="Diseño">
+      <h2>En este apartado puede enviar sus quejas o comentarios Gracias</h2>
+
+      <br>
+      <br>
+      <form id="commentForm">
+        <label for="comentario"><h3>Comentario:</h3></label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+        <br>
+        <center>
+        <button class="boton" type="button" onclick="enviarComentario()">Enviar Comentario</button>
+      </center>
+      </form>
+      <div class="botones">
+        
+        <a href="index.html" class="btn-1">Regresar</a>
+     
+    </div>
+    <img src="images/Marinos.png" alt="">
+
+    </div>
+ 
+</center>
+  <script>
+    function enviarComentario() {
+      var comentario = document.getElementById("comentario").value;
+      var destinatario = "deibydrosas1@gmail.com"; // Coloca aquí la dirección de correo electrónico a la que deben llegar los comentarios
+
+      var link = "mailto:" + destinatario +
+                 "?subject=Nuevo comentario" +
+                 "&body=" + encodeURIComponent(comentario);
+
+      window.location.href = link;
+    }
+  </script>
+</body>
+</html>
+

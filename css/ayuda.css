@@ -1,0 +1,71 @@
+* {
+  font-family: 'Sigmar', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
+}
+.Diseño {
+  height: 500%;
+  background-color: #333;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 50px; /* Espacio superior */
+  margin-bottom: 50px; /* Espacio inferior */
+  margin-left: 20px; /* Espacio izquierdo */
+  margin-right: 20px; /* Espacio derecho */
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  button {
+    display: block;
+    margin-top: 10px;
+  }
+ 
+body {
+  background-color: black;
+  color: white;
+}
+
+.botones {
+    margin-top: 50px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #db241b;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+    font-size: 30px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+.btn-1:hover {
+    background-color: #db241b;
+}
+.container {
+        max-width: 150%;
+        margin: 100px auto 0; /* Agrega un margen superior de 100px */
+        padding: 20px;
+        background-color: #333;
+        border-radius: 10px;
+        height: 1060px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+} 
